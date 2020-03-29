@@ -1,0 +1,9 @@
+dependencies:
+  '@grunmouse/callbacks': 'link:../callbacks'
+  '@grunmouse/hub': 'link:../hub'
+  '@grunmouse/variable': 'link:../variable'
+lockfileVersion: 5.1
+specifiers:
+  '@grunmouse/callbacks': 'link:..\callbacks'
+  '@grunmouse/hub': 'link:..\hub'
+  '@grunmouse/variable': 'link:..\variable'

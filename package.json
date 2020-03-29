@@ -1,0 +1,22 @@
+{
+  "name": "@grunmouse/math-calc-scheme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "format": "cjs",
+  "private": true,
+  "engine": {
+    "node": ">=9.5.0"
+  },
+  "author": {
+    "name": "Rakov",
+    "email": "grunmouse@mail.ru"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@grunmouse/callbacks": "link:..\\callbacks",
+    "@grunmouse/hub": "link:..\\hub",
+    "@grunmouse/variable": "link:..\\variable"
+  },
+  "dev": true
+}

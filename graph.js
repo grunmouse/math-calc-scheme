@@ -7,7 +7,7 @@ const {
 }  = require('./const.js');
 
 
-let Edge = require('./edge.js');
+const Edge = require('./edge.js');
 const VarNode = require('./var-node.js');
 const CalcNode = require('./calc-node.js');
 
@@ -149,6 +149,7 @@ module.exports = {
 
 	getAllGraph,
 	joinGraphs,
-	toDOT
+	toDOT,
+	toTeX
 }
 

@@ -12,6 +12,9 @@
     "name": "Rakov",
     "email": "grunmouse@mail.ru"
   },
+  "scripts":{
+	"test":"mocha test\\test"
+  },
   "license": "MIT",
   "dependencies": {
     "@grunmouse/callbacks": "link:..\\callbacks",

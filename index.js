@@ -1,8 +1,14 @@
+
+const KNOWN_ENUM = require('./const.js');
+
+
+const Edge = require('./edge.js');
+const VarNode = require('./var-node.js');
+const CalcNode = require('./calc-node.js');
+
+
 const {
-	KNOWN_ENUM,
-	VarNode,
-	CalcNode,
-	Edge,
+
 	fireEdges,
 	resolveEdges,
 	
@@ -17,12 +23,9 @@ const {Setable} = require('@grunmouse/variable');
 
 const createVariables = require('./create-variables.js');
 
-const manyVarNodes = require('./many-var-nodes.js');
 /*
 {
 	VarNode,
-	
-	manyVarNodes,
 	
 	getGraph,
 	getUsed,
@@ -39,8 +42,6 @@ module.exports = {
 	VarNode,
 	CalcNode,
 	Edge,
-	
-	manyVarNodes,
 	
 	getGraph,
 	getUsed,

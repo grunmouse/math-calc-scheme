@@ -4,12 +4,13 @@ const {
 	Stub
 } = require('@grunmouse/variable');
 
+const KNOWN_ENUM = require('./const.js');
+
+const Edge = require('./edge.js');
+const VarNode = require('./var-node.js');
+const CalcNode = require('./calc-node.js');
+
 const {
-	KNOWN_ENUM,
-	VarNode,
-	CalcNode,
-	Edge,
-	
 	joinGraphs
 } = require('./graph.js');
 
@@ -137,7 +138,7 @@ function create(graph){
 	let input = new Set();
 	for(let node of graph.nodes){
 		let variable = getVariable(node);
-		if(variable.node && variable.node.known === KNOWN_ENUM.SOURCE){
+		if(variable.node && variable.node.isSource){
 			input.add(variable);
 		}
 	}

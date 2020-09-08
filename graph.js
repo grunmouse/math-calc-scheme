@@ -1,16 +1,4 @@
 
-const {
-	UNKNOWN,
-	VARIABLE,
-	CALCULATE,
-	SOURCE
-}  = require('./const.js');
-
-
-const Edge = require('./edge.js');
-const VarNode = require('./var-node.js');
-const CalcNode = require('./calc-node.js');
-
 /**
  * @typedef {Object} Graph
  * @property {Iterable<Node>} nodes - набор узлов графа
@@ -131,15 +119,7 @@ function toTeX(graph, sorter){
 }
 
 module.exports = {
-	KNOWN_ENUM:{
-		UNKNOWN,
-		CALCULATE,
-		VARIABLE,
-		SOURCE
-	},
-	VarNode,
-	CalcNode,
-	Edge,
+
 	
 	fireEdges,
 	resolveEdges,

@@ -1,15 +1,14 @@
-let {
-	KNOWN_ENUM,
-	VarNode,
-	CalcNode,
-	Edges,
-	
+const {
 	getGraph,
 	getUsed,
 	getAllGraph
 } = require('../graph.js');
 
-const manyVarNodes = require('../many-var-nodes.js');	
+const KNOWN_ENUM = require('../const.js');
+
+const Edge = require('../edge.js');
+const VarNode = require('../var-node.js');
+const CalcNode = require('../calc-node.js');
 
 let assert = require('assert');
 
